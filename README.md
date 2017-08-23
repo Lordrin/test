@@ -10,7 +10,7 @@ $(document).ready(function () {
     var voornaam = $('#txtVoornaam').val();
     var achternaam = $('#txtAchternaam').val();
 
-    $('btnToevoegen').on('click', function () {
+    $('#btnToevoegen').on('click', function () {
         var info = [];
         if(voornaam !== '' && achternaam !== ''){
             info.push(voornaam, achternaam, $('#ddlModule').option.val())
